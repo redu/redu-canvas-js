@@ -1,0 +1,12 @@
+JBundle.config do
+  version '0.0.1'
+
+  src_dir './src'
+
+  bundle 'redu.canvas.js' => 'redu-canvas-[:version].js' do
+    file 'easyXDM.js'
+    file 'redu.canvas.js'
+  end
+
+  target_dir './dist'
+end

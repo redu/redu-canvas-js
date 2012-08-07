@@ -1,0 +1,49 @@
+## About
+
+Framework agnostic JavaScript library to support responsive applications using
+[Redu](http://www.redu.com.br) canvas.
+
+## Why do you need this library?
+
+Two main resolutions are currently supported by Redu Platform:
+
+1. 740px width and unlimited height (Default);
+2. 900px width and unlimited height;
+
+The application running inside the canvas should tell the provider which resolution
+it prefers. Thanks to the [Same Origin Policy](http://en.wikipedia.org/wiki/Same_origin_policy),
+widely implemented by browsers, this job isn't straightforward.
+
+## Quickstart
+
+Include the minifiyed (see the ``dist`` folder or the downaload page) version of
+this library in the header of your HTML document which is going to be used
+as a canvas app.
+
+```html
+<script type="text/javascript" src="/javascripts/redu.canvas-0.0.1.min.js"></script>
+```
+
+Initialize the Canvas object stating the dimensions needed by your application.
+
+```javascrit
+  var canvas = new Redu.Canvas({
+    width : 900,
+    height : 1000,
+  });
+```
+
+That's it. Now, try to open the application inside the canvas. You should see
+it stretched to accomodate your application.
+
+## FAQ
+
+### What the hell are canvas applications?
+
+Redu Canvas Apps are just like Facebook apps (like farmville ones) which run
+inside Redu Educational Platform. It's the best way to deliver a sameless experience
+to end-users.
+
+### How can I create a canvas application?
+
+You can find more information about that on our [developers page](http://developers.redu.com.br).
