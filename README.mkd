@@ -41,7 +41,7 @@ it stretched to accomodate your application.
 ### What the hell are canvas applications?
 
 Redu Canvas Apps are just like Facebook apps (like farmville ones) which run
-inside Redu Educational Platform. It's the best way to deliver a sameless experience
+inside Redu Educational Platform. It's the best way to deliver a sameless educational experience
 to end-users.
 
 ### How can I create a canvas application?
