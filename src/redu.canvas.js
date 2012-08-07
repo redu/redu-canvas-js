@@ -1,8 +1,8 @@
-(function($){
+(function(){
   if(!window.Redu)
-    Redu = {};
+    window.Redu = {};
 
-  Redu.Canvas = function(options){
+  window.Redu.Canvas = function(options){
     var canvas = this;
     this.config = this.utils.extend({
       width : 720,
@@ -24,9 +24,9 @@
     }
   }
 
-  Redu.Canvas.prototype.version = "0.1";
-  Redu.Canvas.prototype.utils = {};
-  Redu.Canvas.prototype.utils.extend = function(target, extensions){
+  window.Redu.Canvas.prototype.version = "0.1";
+  window.Redu.Canvas.prototype.utils = {};
+  window.Redu.Canvas.prototype.utils.extend = function(target, extensions){
     for (var property in extensions) {
       if (extensions[property] && extensions[property].constructor &&
         extensions[property].constructor === Object) {
@@ -37,7 +37,7 @@
     }
     return target;
   }
-  Redu.Canvas.prototype.prepareMessage = function(e, payload) {
+  window.Redu.Canvas.prototype.prepareMessage = function(e, payload) {
     var canvas = this;
     var message = {
       "event" : "resize"
@@ -50,12 +50,12 @@
 
     return JSON.stringify(message);
   }
-  Redu.Canvas.prototype.canvasEnabled = function(){
+  window.Redu.Canvas.prototype.canvasEnabled = function(){
     var uri = this.parseUri(document.URL);
-    uri['queryKey']['xdm_e'] !== undefined;
+    return !(uri['queryKey']['xdm_e'] == undefined);
   }
 
-  Redu.Canvas.prototype.parseUri = function(str) {
+  window.Redu.Canvas.prototype.parseUri = function(str) {
     var options = {
       strictMode: false,
       key: ["source","protocol","authority","userInfo","user","password",
@@ -84,7 +84,4 @@
 
     return uri;
   }
-
-
-
-})(jQuery);
+})();
