@@ -38,7 +38,7 @@ it stretched to accomodate your application.
 
 Here is how your application should look like:
 
-!(streched canvas)[https://github.com/downloads/redu/redu-canvas-js/Screen%20Shot%202012-08-07%20at%206.51.36%20PM.png]
+![streched canvas](https://github.com/downloads/redu/redu-canvas-js/Screen%20Shot%202012-08-07%20at%206.51.36%20PM.png)
 
 ## FAQ
 
