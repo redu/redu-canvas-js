@@ -36,6 +36,10 @@ Initialize the Canvas object stating the dimensions needed by your application.
 That's it. Now, try to open the application inside the canvas. You should see
 it stretched to accomodate your application.
 
+Here is how your application should look like:
+
+!(streched canvas)[https://github.com/downloads/redu/redu-canvas-js/Screen%20Shot%202012-08-07%20at%206.51.36%20PM.png]
+
 ## FAQ
 
 ### What the hell are canvas applications?
