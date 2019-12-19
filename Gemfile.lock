@@ -11,7 +11,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     closure-compiler (1.1.7)
-    rack (1.4.1)
+    rack (2.0.8)
     thor (0.15.4)
 
 PLATFORMS
